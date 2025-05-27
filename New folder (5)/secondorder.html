@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order</title>
+  <link rel="stylesheet" href="secondorder.css" />
+  <link rel="shortcut icon" href="logo-removebg-preview.png" type="image/x-icon" />
+</head>
+<body>
+  <div class="header">
+    <img src="logo-removebg-preview.png" alt="logo" id="logo" />
+    <nav>
+      <ul>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="invest.html">Invest</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="outercontainer">
+    <div class="innerbox">
+      <div class="innerbox2">
+        <button id="membership_tab">Membership</button>
+        <button id="orders_tab">Order</button>
+      </div>
+
+      <div class="packageorder" id="membership_section">
+        <center><h1>Membership</h1></center>
+        <form id="membership_form">
+          <div class="form-row">
+            <input type="text" id="username" placeholder="Name" required />
+            <input type="tel" id="phonenumber" placeholder="Phone Number" required />
+          </div>
+
+          <div class="form-row">
+            <input type="text" placeholder="Hno" id="Hno" required />
+            <input type="text" placeholder="Street" id="colony" required />
+          </div>
+
+          <div class="form-row">
+            <input type="text" placeholder="Area" id="area" required />
+            <input type="text" placeholder="City" id="city" required />
+          </div>
+
+          <div class="form-row">
+            <select id="options" name="options" required>
+              <option value="" disabled selected hidden>Membership</option>
+              <option value="platinum">Platinum</option>
+              <option value="gold">Gold</option>
+              <option value="silver">Silver</option>
+            </select>
+          </div>
+
+          <button type="submit" id="order_btn">Order</button>
+        </form>
+      </div>
+
+      <div class="order" id="order_cont">
+        <button id="login_btn">Login</button>
+        <center><p>or</p></center>
+        <button id="signup_btn">Signup</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="secondorder.js"></script>
+</body>
+</html>

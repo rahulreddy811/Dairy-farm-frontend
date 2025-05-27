@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('black-white-cow-grazing-pasture-daytime_181624-27184.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+  color: #ffcc00;
+}
+
+#logo {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 20px;
+  margin-top: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 90%;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 300px;
+  background: white;
+  border: 5px solid black;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.card h1 {
+  margin: 10px 0;
+}
+
+.card ul {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.card button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #ffcc00;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.nav-btn.left {
+  left: 0;
+}
+
+.nav-btn.right {
+  right: 0;
+}
+
+.popup {
+  display: none;              
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;            
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;        
+  z-index: 1000;              
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.close{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popupgold {
+  display: none;              
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;            
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;        
+  z-index: 1000;              
+}
+
+.popupgold-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.closegold{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popupsilver {
+  display: none;              
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;            
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;        
+  z-index: 1000;              
+}
+
+.popupsilver-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.closesilver{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
